@@ -121,11 +121,11 @@ This project demonstrates a ** 3-Tier Architecture** setup on **AWS**, including
  ```bash
 
  MariaDB [(none)]> alter user 'root'@'localhost' identified by 'Pass@123';
- MariaDB [(none)]> create user 'mustkim'@'192.168.7.203' identified by "beg@123";
+ MariaDB [(none)]> create user 'rohit'@'192.168.7.203' identified by "Rohit@123";
  MariaDB [(none)]> create database studentdb;
  MariaDB [(none)]> use studentdb;
  MariaDB [studentdb]> create table students
- MariaDB [studentdb]> Grant all privileges on studentdb.* to 'mustkim'@'192.168.7.203';
+ MariaDB [studentdb]> Grant all privileges on studentdb.* to 'rohit'@'192.168.7.203';
  MariaDB [studentdb]> flush privileges;
  
 
