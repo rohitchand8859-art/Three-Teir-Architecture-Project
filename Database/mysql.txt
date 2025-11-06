@@ -1,0 +1,18 @@
+**sudo mysql**
+
+alter user 'root'@'localhost' identified by 'Pass@123';
+create user 'rohit'@'192.168.7.203' identified by "Rohit@123";
+
+
+create database studentdb;
+ use studentdb;
+ 
+
+create table students (id int primary key auto_increment, fullname varchar(100), email varchar(100), phone bigint(10), course varchar(50)); 
+ use students;
+
+
+Grant all privileges on studentdb.* to 'rohit'@'192.168.7.203';
+flush privileges;
+
+exit
